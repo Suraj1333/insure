@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 8rem;
+    
+}
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav__links ul {
+    display: flex;
+    padding: 0rem 1rem;
+}
+.nav__links ul li {
+    list-style: none;
+    padding: 2rem;
+}
+.nav__links ul li a {
+    color: hsl(216, 30%, 68%);
+    text-decoration: none;
+    text-transform: uppercase;    
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+.nav__links li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+button {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 2%;
+    text-transform: uppercase;
+    border:  2px solid hsl(270, 9%, 17%);
+    background-color: #fff;
+    transition:  all 0.4s ease-in-out;
+}
+button:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    background: url(images/bg-pattern-intro-right-desktop.svg), url(images/bg-pattern-intro-left-desktop.svg); ; 
+    background-repeat: no-repeat, no-repeat;   
+    background-position: right top, left bottom;      
+    background-color:hsl(256, 26%, 20%);    
+    margin-bottom: 8rem;
+     
+}
+.separator_line {
+    height: 1px;
+    width: 175px;    
+    background-color: rgb(255, 255, 255);
+    margin-left: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;  
+    
+}
+.content_main {
+    display: flex;
+    height: 35rem;    
+}
+.text_main h1{
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 4.8rem;
+    color: white;
+    margin-left: 10rem;
+    font-weight: 400;
+    width: 35rem;    
+}
+.text_main p {
+    font-family: 'Karla', serif;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-left: 10rem;
+    word-spacing: 3px;
+    margin-top: 1rem;
+    width: 40rem;
+    text-align: justify;
+}
+.button_main {
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    background-color: hsl(256, 26%, 20%);
+    border-color: white;
+    color: white;
+}
+.button_main:hover {
+    background-color: #fff;
+    color: hsl(270, 9%, 17%);
+}
+.image-intro {
+    margin-left: 5rem;    
+    width: 33rem;
+    height: 650px;    
+    background: url(images/image-intro-desktop.jpg);    
+}
+.mobile-picture {
+    display: none;
+}
+
+.separator_line-2 {
+    height: 1px;
+    width: 175px;    
+    background-color: rgb(189, 189, 189);
+    margin-left: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 3rem;  
+}
+.content_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.content_two h2 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin-left: 10rem;
+    color: hsl(256, 26%, 20%);
+}
+
+.boxes  {
+    margin-left: 8rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.box { 
+    margin: 2rem;
+    width: auto;
+}    
+.box-heading {
+    font-family: 'DM Serif Display', sans-serif;
+    color: hsl(256, 26%, 20%);
+    padding: 1.5rem 0rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.box-text {
+    font-family: 'Karla', sans-serif;
+    color: hsl(216, 30%, 68%);
+    text-align: justify;
+}
+
+.know_more {
+    max-width: 75rem;
+    max-height: 15rem;
+    background: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:hsl(256, 26%, 20%);
+    margin: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.know-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-box {
+    padding: 5rem 3rem;    
+}
+.text-h1 h3 {
+    font-family: 'DM Serif Display', sans-serif;
+    color: white;
+    padding: 1.5rem 3rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+footer {
+    background: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: hsl(0, 0%, 98%);
+    height: auto;
+}
+
+.footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+.footer-head ul {
+    display: flex;
+}
+
+.footer-head ul li {
+    list-style: none;
+    padding: 1rem;    
+}
+.footer-head ul li img {
+    cursor: pointer;
+}
+.footer-head ul li img:hover {
+    fill: hsl(270, 9%, 17%);
+}
+
+.footer-separator {
+    margin-left: 8rem;
+    margin-right: 8rem;   
+    margin-bottom: 1rem;
+    width: auto;
+    height: 1px;
+    background-color: #cdcdcd;
+}
+.menu  {
+    display: none;
+}
+
+.footer__links {
+    margin: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.link_box {
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+.link_box h4 {
+    color: hsl(216, 30%, 68%);
+    padding: 1rem;
+}
+.link_box ul li {
+    list-style: none;
+    padding: 0.8rem 0rem;
+}
+
+.link_box ul li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+}
+.link_box ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1024px){
+    .text_main h1, .text_main p, .button_main {
+        margin-left: 3rem;
+    }
+    .text_main p {
+        width: 25rem;
+    }
+    .image-intro {
+        background: url(images/image-intro-mobile.jpg);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text-h1 h3  {
+        font-size: 2.5rem;
+    }
+    .separator_line {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width:768px){
+    .content_main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .separator_line {
+        display: none;
+    }
+    .image-intro {
+        background: none;
+    }
+    .content_main {
+        height: auto;
+    }
+    .header {
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+    }
+    
+   
+    .menu {
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .mobile-picture {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 40rem;
+    }
+    .text_main {
+        margin-top: 2rem;       
+    }
+    .text_main h1, .text_main p, .button_main {
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+    }
+    .text_main h1 {
+        font-size: 4rem;
+    }
+    .text_main p {
+        padding-bottom: 2rem;
+    }
+    .button_main {
+        margin-bottom: 2rem;
+    }
+
+    .boxes {
+        display: block;        
+    }
+    .box {
+        text-align: center;
+    }
+    .box-text {
+        text-align: center;
+    }
+    .know-more {
+        width: 100%;
+        
+        
+    }
+    .know_more {
+        display: block;
+        align-items: center;  
+        max-height: none;        
+       
+    }
+    .text-h1 h3 {
+        margin: auto;
+        text-align: center;
+    }
+    .button-box {
+       padding: 0rem;
+       margin: 0rem;
+       
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content_two h2 {
+        margin: 0px;
+        text-align: center;
+    }
+    .nav__links   {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        padding: 3%;
+        background: url(images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;  
+        background-position: bottom right;   
+        background-color:  hsl(270, 9%, 17%);         
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        top: 4.9rem;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav__links ul {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .nav__links ul li a:hover {
+        color: grey;;
+    }
+    .nav__links ul li a {
+        color: white;
+    }
+    body {
+        overflow-x: hidden;
+    }  
+  
+          
+   
+}
+
+
+@media (max-width:500px){
+    body {
+        overflow-x: hidden;
+    }
+    .image-intro img {
+        width: 100%;
+    }
+    .text_main h1 {
+        font-size: 3rem;
+    }
+    .know_more {
+        width: 100%;
+        margin: 0rem;
+    }
+    .text-h1 h3 {
+        font-size: 2rem;
+    }
+    .content_two h2 {
+        font-size: 3rem;
+    }
+    .footer-head {
+        display: block;
+        text-align: center;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+
+
